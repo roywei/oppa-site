@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>OPPA Family Style</title>
+<meta name="description" content="A rhythm game: the family group chat is on fire, and you send every message to OPPA, Grok Bot, Muse or Dot.">
+<meta property="og:title" content="OPPA · Your family's chief of staff">
+<meta property="og:description" content="An open-source assistant that lives in your family group chat and runs on your own Mac.">
+<meta property="og:image" content="https://roywei.github.io/oppa-site/media/og-1200x630.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/oppa-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="wrap">
+  <a href="index.html"><picture>
+    <source srcset="assets/oppa-lockup-dark.svg" media="(prefers-color-scheme: dark)">
+    <img src="assets/oppa-lockup-light.svg" alt="OPPA">
+  </picture></a>
+  <nav>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#agents">Agents</a>
+    <a href="index.html#start">Get started</a>
+    <a class="star" href="https://github.com/roywei/oppa">GitHub</a>
+  </nav>
+</header>
+
+<main>
+<section id="family-style" class="fs fs-page">
+  <div class="wrap">
+    <div class="fs-head">
+      <div>
+        <div class="eyebrow">A game</div>
+        <h2>OPPA <span>Family</span> Style</h2>
+        <p class="section-lede">The family group chat is on fire. Send each message to whoever should handle it, on the beat if you can. Let seven pile up and Grandma leaves the chat.</p>
+      </div>
+      <div class="fs-side">
+        <div class="fs-dancer" aria-hidden="true">
+          <img class="fs-face" src="assets/oppa-face-shades.png" alt="">
+        </div>
+        <a class="fs-radio" href="https://music.apple.com/us/album/gangnam-style/1445144506?i=1445144527" target="_blank" rel="noopener">Now playing: PSY, "Gangnam Style"<small>Plays when you drop the beat. Preview from Apple Music; full song there.</small></a>
+        <audio id="fs-song" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/00/53/c6/0053c6f7-6342-7a3d-37c5-60b896948bdb/mzaf_10727579274479911915.plus.aac.p.m4a" loop preload="none"></audio>
+      </div>
+    </div>
+
+    <div class="fs-marquee" aria-hidden="true"><div>One agent to rule them all ✦ Finally, someone who reads every message ✦ Bring your own agent army 🫡 ✦ Grandma texts me now. She says please. ✦ Your Mac mini just got a job ✦ Inbox zero, family edition ✦ No new app. Just a new contact. ✦ One agent to rule them all ✦ Finally, someone who reads every message ✦ Bring your own agent army 🫡 ✦ Grandma texts me now. She says please. ✦ Your Mac mini just got a job ✦ Inbox zero, family edition ✦ No new app. Just a new contact. ✦ </div></div>
+    <div class="fs-game" id="fs-game">
+      <div class="fs-hud">
+        <span>Score <b id="fs-score">0</b></span>
+        <span>Combo <b id="fs-combo">×0</b></span>
+        <span id="fs-lives">❤️❤️❤️</span>
+        <button class="fs-mute" id="fs-mute" type="button" aria-label="Sound on or off">🔊</button>
+      </div>
+      <div class="fs-chat" id="fs-chat" aria-live="polite">
+        <div class="fs-chat-head">Rivera Fam 🏡 <small id="fs-typing">5 people</small></div>
+        <ol id="fs-queue"></ol>
+        <div class="fs-banner" id="fs-banner">OPPA<br>FAMILY STYLE!</div>
+        <div class="fs-start" id="fs-start">
+          <p><b>OPPA Family Style</b><br>Family questions go to OPPA. Things to find go to Grok Bot. Calls go to Muse. Broken things go to Dot.</p>
+          <button class="btn primary" id="fs-go" type="button">Drop the beat</button>
+          <small>Keys 1 2 3 4 work too.</small>
+        </div>
+      </div>
+      <div class="fs-pads">
+        <button type="button" data-to="oppa"><img src="assets/oppa-icon.svg" alt=""><span><b>OPPA</b>answers</span><kbd>1</kbd></button>
+        <button type="button" data-to="grok"><img src="assets/agent-grok-bot.png" alt=""><span><b>Grok Bot</b>finds</span><kbd>2</kbd></button>
+        <button type="button" data-to="muse"><img src="assets/agent-muse.png" alt=""><span><b>Muse</b>calls</span><kbd>3</kbd></button>
+        <button type="button" data-to="dot"><img src="assets/agent-dot.png" alt=""><span><b>Dot</b>fixes</span><kbd>4</kbd></button>
+      </div>
+    </div>
+
+    <div class="fs-bottom">
+      <img class="fs-poster" src="media/oppa-family-style-poster.jpg" alt="OPPA in sunglasses among family chat bubbles: who has pickup Thursday, server is down again, Sam has it and Dot is fixing the server. Headline: Opp-opp-opp, OPPA Family Style." loading="lazy">
+      <div class="fs-lyrics">
+        <div class="eyebrow">The theme song</div>
+        <p>Reads every message, every single one<br>Remembers Grandma's birthday and the dentist's done<br>Server's down again? Dot is on the way<br><b>Hey! OPPA Family Style.</b></p>
+        <p class="note">Parody lyrics, made-up family. No real horses were harmed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.fs { background: linear-gradient(160deg, #2a4fd6, #6d3bd6 60%, #d63b8f); color: #fff; border-top: 0; }
+.fs .section-lede, .fs .note { color: #e6ebff; }
+.fs .eyebrow { color: #ffd84d; }
+.fs h2 span { color: #ffd84d; }
+.fs-side { display: flex; align-items: flex-end; gap: 18px; }
+.fs-radio { display: block; width: 220px; padding: 12px 14px; border-radius: 14px; background: #ffffff26; color: #fff; font-weight: 700; text-decoration: none; }
+.fs-radio:hover { background: #ffffff3d; }
+.fs-radio small { display: block; margin-top: 4px; color: #e6ebff; font-size: 11px; font-weight: 500; line-height: 1.3; }
+.fs-head { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.fs-dancer { position: relative; flex: none; width: 170px; height: 200px; }
+.fs-face { position: absolute; bottom: 0; left: 10px; width: 150px; filter: drop-shadow(0 10px 18px #0006); animation: fs-ride .9091s infinite; animation-play-state: paused; }
+.fs.playing .fs-face { animation-play-state: running; }
+.fs.party .fs-face { animation-duration: .4545s; }
+@keyframes fs-ride { 0% { transform: translate(-10px, 0) rotate(-4deg); } 25% { transform: translate(-10px, -18px) rotate(-4deg); } 50% { transform: translate(10px, 0) rotate(4deg); } 75% { transform: translate(10px, -18px) rotate(4deg); } 100% { transform: translate(-10px, 0) rotate(-4deg); } }
+
+.fs-marquee { overflow: hidden; margin: 24px 0 0; padding: 10px 0; border-radius: 12px; background: #ffd84d; color: #171b27; font-weight: 800; white-space: nowrap; }
+.fs-marquee div { display: inline-block; animation: fs-marquee 40s linear infinite; }
+@keyframes fs-marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .fs-marquee div { animation: none; } }
+.fs-game { margin-top: 28px; padding: 18px; border-radius: 26px; background: #ffffff1f; backdrop-filter: blur(8px); }
+.fs-hud { display: flex; align-items: center; gap: 22px; margin-bottom: 12px; font-size: 15px; font-weight: 600; }
+.fs-hud b { font-size: 20px; }
+.fs-mute { margin-left: auto; padding: 4px 10px; border: 0; border-radius: 999px; background: #fff; font-size: 18px; cursor: pointer; }
+.fs-chat { position: relative; height: 430px; overflow: hidden; border-radius: 20px; background: #fff; color: #171b27; }
+.fs-chat-head { padding: 12px 16px; border-bottom: 1px solid #e6e9f2; font-weight: 700; text-align: center; }
+.fs-chat-head small { display: block; color: #8a93a8; font-weight: 500; font-size: 12px; }
+.fs-chat ol { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 12px 14px; list-style: none; }
+.fs-chat li { align-self: flex-start; max-width: 85%; padding: 8px 14px; border-radius: 18px; background: #e9ebf0; font-size: 15px; line-height: 1.35; animation: fs-pop .25s ease-out; transition: opacity .35s, transform .35s; }
+.fs-chat li i { display: block; color: #8a93a8; font-size: 11px; font-style: normal; }
+.fs-chat li.now { outline: 3px solid #ffd84d; }
+.fs-chat li.done { opacity: 0; transform: translateX(60px); }
+.fs-chat li.wrong { animation: fs-shake .3s; background: #ffd9de; }
+.fs-chat li.reply { align-self: flex-start; background: #315eda; color: #fff; }
+@keyframes fs-pop { from { transform: scale(.6); opacity: 0; } }
+@keyframes fs-shake { 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+.fs-banner { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: clamp(28px, 6vw, 54px); font-weight: 900; line-height: 1; text-align: center; text-shadow: 0 6px 0 #6d3bd6; background: #ffd84dcc; opacity: 0; pointer-events: none; transform: scale(.7); transition: .25s; }
+.fs-banner.on { opacity: 1; transform: scale(1); }
+.fs-start { position: absolute; inset: 0; display: grid; place-content: center; gap: 14px; padding: 24px; text-align: center; background: #fffffff0; }
+.fs-start p { max-width: 26em; margin: 0; }
+.fs-start small { color: #8a93a8; }
+.fs-start .btn { justify-self: center; }
+.fs-pads { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+.fs-pads button { display: flex; align-items: center; gap: 10px; padding: 10px; border: 0; border-radius: 16px; background: #fff; color: #171b27; font: inherit; font-size: 13px; text-align: left; cursor: pointer; transition: transform .08s; }
+.fs-pads button:active, .fs-pads button.hit { transform: scale(.94); background: #ffd84d; }
+.fs-pads img { width: 40px; height: 40px; border-radius: 12px; }
+.fs-pads b { display: block; font-size: 15px; }
+.fs-pads kbd { margin-left: auto; padding: 1px 7px; border-radius: 6px; background: #eef1f8; font: 12px var(--mono); }
+.fs-bottom { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 48px; align-items: center; margin-top: 48px; }
+.fs-poster { width: 100%; border-radius: 20px; box-shadow: 0 18px 50px #0005; }
+.fs-lyrics p { margin: 12px 0 0; font-size: clamp(20px, 2.2vw, 28px); line-height: 1.45; font-weight: 600; }
+.fs-lyrics p b { color: #ffd84d; }
+.fs-lyrics .note { margin-top: 18px; font-size: 14px; font-weight: 400; }
+@media (max-width: 760px) {
+  .fs-bottom { grid-template-columns: 1fr; gap: 28px; }
+  .fs-side { align-items: center; }
+  .fs-side { flex-direction: column; align-items: flex-start; }
+  .fs-radio { width: auto; }
+  .fs-head { flex-direction: column-reverse; align-items: flex-start; }
+  .fs-pads { grid-template-columns: 1fr 1fr; }
+  .fs-pads kbd { display: none; }
+  .fs-chat { height: 380px; }
+}
+</style>
+
+<script>
+(() => {
+  const BPM = 132, BEAT = 60 / BPM;
+  const LINES = [
+    ["Grandma Rosa", "Is anyone picking up Leo Thursday? I have book club 📚", "oppa"],
+    ["Sam", "Did the dentist ever call back about Mia?", "muse"],
+    ["Mia", "the minecraft server is down AGAIN", "dot"],
+    ["Alex", "find Leo's blue scooter somewhere close", "grok"],
+    ["Leo", "what's for dinner", "oppa"],
+    ["Grandma Rosa", "Can someone book my flu shot? I hate the phone", "muse"],
+    ["Sam", "why is the wifi so slow", "dot"],
+    ["Alex", "cheapest flights to Orlando in December?", "grok"],
+    ["Mia", "when is my piano recital", "oppa"],
+    ["Sam", "call the plumber, the sink is doing the thing", "muse"],
+    ["Leo", "the printer is printing nothing but sadness", "dot"],
+    ["Grandma Rosa", "Where can I buy the good dumplings near me?", "grok"],
+    ["Alex", "remind me to sign the field trip slip", "oppa"],
+    ["Sam", "can someone cancel the gym trial before they charge us", "muse"],
+    ["Mia", "iPad says storage full help", "dot"],
+    ["Leo", "is there a LEGO store open right now", "grok"],
+    ["Grandma Rosa", "What day is Thanksgiving this year?", "oppa"],
+    ["Alex", "move my 3pm haircut to Saturday", "muse"],
+    ["Sam", "the garage door app logged me out again", "dot"],
+    ["Mia", "find me a costume that is a cat but cooler", "grok"],
+  ];
+  const REPLY = { oppa: "OPPA: on it ✅", grok: "OPPA → Grok Bot 🔎", muse: "OPPA → Muse ☎️", dot: "OPPA → Dot 🛠️" };
+  const ORDER = ["oppa", "grok", "muse", "dot"];
+  const $ = id => document.getElementById(id);
+  const root = $("family-style"), queueEl = $("fs-queue");
+  let ctx, master, muted = false, nextNote = 0, step = 0, t0 = 0, timer = 0, spawnTimer = 0;
+  let state = null;
+
+  // An original beat: kick, clap, hats, and a bouncy square-wave riff in A minor.
+  const RIFF = [57, 0, 57, 60, 0, 57, 55, 0, 57, 0, 57, 60, 62, 60, 57, 0];
+  const hz = n => 440 * Math.pow(2, (n - 69) / 12);
+  function tone(at, freq, len, type, vol) {
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = type; o.frequency.setValueAtTime(freq, at);
+    g.gain.setValueAtTime(vol, at); g.gain.exponentialRampToValueAtTime(0.001, at + len);
+    o.connect(g).connect(master); o.start(at); o.stop(at + len);
+  }
+  function kick(at) {
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.frequency.setValueAtTime(150, at); o.frequency.exponentialRampToValueAtTime(40, at + 0.12);
+    g.gain.setValueAtTime(0.9, at); g.gain.exponentialRampToValueAtTime(0.001, at + 0.2);
+    o.connect(g).connect(master); o.start(at); o.stop(at + 0.2);
+  }
+  function noise(at, len, vol, hp) {
+    const b = ctx.createBuffer(1, ctx.sampleRate * len, ctx.sampleRate), d = b.getChannelData(0);
+    for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    const s = ctx.createBufferSource(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+    s.buffer = b; f.type = "highpass"; f.frequency.value = hp;
+    g.gain.setValueAtTime(vol, at); g.gain.exponentialRampToValueAtTime(0.001, at + len);
+    s.connect(f).connect(g).connect(master); s.start(at);
+  }
+  function schedule() {
+    while (nextNote < ctx.currentTime + 0.12) {
+      const s = step % 16;
+      if (s % 4 === 0) kick(nextNote);
+      if (s % 8 === 4) noise(nextNote, 0.15, 0.5, 1200);
+      if (s % 2 === 1) noise(nextNote, 0.04, 0.15, 7000);
+      if (RIFF[s]) tone(nextNote, hz(RIFF[s] + (state && state.party ? 12 : 0)), 0.16, "square", 0.08);
+      if (s === 0 && step % 64 === 0) tone(nextNote, hz(45), BEAT * 4, "sawtooth", 0.05);
+      nextNote += BEAT / 4; step++;
+    }
+  }
+  function startSynth() {
+    clearInterval(timer);
+    t0 = nextNote = ctx.currentTime + 0.05; step = 0;
+    timer = setInterval(schedule, 25);
+  }
+  const song = $("fs-song");
+  let usingSong = false;
+  function onBeat() {
+    if (usingSong) {
+      const phase = (song.currentTime / BEAT) % 1;
+      return phase < 0.2 || phase > 0.8;
+    }
+    if (!ctx) return false;
+    const phase = ((ctx.currentTime - t0) / BEAT) % 1;
+    return phase < 0.18 || phase > 0.82;
+  }
+
+  function render() {
+    $("fs-score").textContent = state.score;
+    $("fs-combo").textContent = "×" + state.combo;
+    $("fs-lives").textContent = "❤️".repeat(state.lives) + "🖤".repeat(3 - state.lives);
+    const waiting = [...queueEl.querySelectorAll("li.msg:not(.done)")];
+    waiting.forEach((li, i) => li.classList.toggle("now", i === 0));
+    $("fs-typing").textContent = waiting.length > 4 ? "Grandma Rosa is typing…" : "5 people";
+  }
+  function spawn() {
+    if (!state || state.over) return;
+    const [who, text, to] = LINES[Math.floor(Math.random() * LINES.length)];
+    const li = document.createElement("li");
+    li.className = "msg"; li.dataset.to = to;
+    li.innerHTML = "<i></i>"; li.firstChild.textContent = who; li.append(text);
+    queueEl.append(li);
+    const waiting = queueEl.querySelectorAll("li.msg:not(.done)").length;
+    if (waiting >= 7) return end("Grandma Rosa left the chat.");
+    state.gap = Math.max(650, state.gap * 0.96);
+    spawnTimer = setTimeout(spawn, state.gap);
+    render();
+  }
+  const SHOUTS = ["OPPA<br>FAMILY STYLE!", "ONE AGENT<br>TO RULE THEM ALL", "GRANDMA<br>APPROVES", "AGENT ARMY<br>ASSEMBLE", "INBOX ZERO,<br>FAMILY EDITION"];
+  function party() {
+    $("fs-banner").innerHTML = SHOUTS[(state.combo / 10 - 1) % SHOUTS.length];
+    state.party = true; root.classList.add("party");
+    $("fs-banner").classList.add("on");
+    setTimeout(() => $("fs-banner").classList.remove("on"), 1200);
+    setTimeout(() => { if (state) { state.party = false; root.classList.remove("party"); } }, BEAT * 8000);
+  }
+  function send(to) {
+    if (!state || state.over) return;
+    const pad = document.querySelector(`.fs-pads [data-to="${to}"]`);
+    pad.classList.add("hit"); setTimeout(() => pad.classList.remove("hit"), 120);
+    const li = queueEl.querySelector("li.msg:not(.done)");
+    if (!li) return;
+    if (li.dataset.to === to) {
+      state.combo++;
+      const bonus = onBeat() ? 5 : 0;
+      state.score += 10 * Math.min(1 + Math.floor(state.combo / 5), 5) + bonus;
+      li.classList.add("done");
+      const r = document.createElement("li");
+      r.className = "reply"; r.textContent = REPLY[to] + (bonus ? "  ON BEAT!" : "");
+      li.after(r);
+      setTimeout(() => { li.remove(); r.remove(); render(); }, 700);
+      if (state.combo % 10 === 0) party();
+    } else {
+      state.combo = 0; state.lives--;
+      li.classList.remove("wrong"); void li.offsetWidth; li.classList.add("wrong");
+      if (state.lives <= 0) return end("Grandma Rosa is very disappointed.");
+    }
+    render();
+  }
+  function rank(score) {
+    if (score >= 1000) return "One agent to rule them all 💍";
+    if (score >= 700) return "Agent whisperer";
+    if (score >= 450) return "Chief of staff";
+    if (score >= 250) return "Family group chat MVP";
+    if (score >= 100) return "Seen-by-4 survivor";
+    return "Group chat intern";
+  }
+  function end(why) {
+    state.over = true; clearTimeout(spawnTimer); clearInterval(timer); song.pause();
+    root.classList.remove("playing", "party");
+    const title = rank(state.score);
+    const share = encodeURIComponent(`I scored ${state.score} in OPPA Family Style: "${title}". Can you keep up with the family group chat? 🐎`);
+    const box = $("fs-start");
+    box.innerHTML = "";
+    const p = document.createElement("p");
+    p.innerHTML = "<b></b><br>";
+    p.firstChild.textContent = why;
+    p.append(`Score ${state.score} · ${title}`);
+    const again = document.createElement("button");
+    again.className = "btn primary"; again.type = "button"; again.textContent = "Again!";
+    again.onclick = start;
+    const x = document.createElement("a");
+    x.className = "btn"; x.textContent = "Brag on X";
+    x.href = `https://x.com/intent/post?text=${share}&url=${encodeURIComponent(location.href.split("#")[0] + "#family-style")}`;
+    x.target = "_blank"; x.rel = "noopener";
+    box.append(p, again, x);
+    box.style.display = "";
+  }
+  function start() {
+    if (!ctx) {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      master = ctx.createGain(); master.gain.value = muted ? 0 : 0.7; master.connect(ctx.destination);
+    }
+    ctx.resume();
+    clearInterval(timer); clearTimeout(spawnTimer);
+    usingSong = true; song.muted = muted; song.currentTime = 0;
+    song.play().catch(() => { usingSong = false; startSynth(); });
+    queueEl.innerHTML = "";
+    state = { score: 0, combo: 0, lives: 3, gap: 1800, over: false, party: false };
+    $("fs-start").style.display = "none";
+    root.classList.add("playing");
+    render(); spawn();
+  }
+  $("fs-go").onclick = start;
+  document.querySelectorAll(".fs-pads button").forEach(b => b.onclick = () => send(b.dataset.to));
+  addEventListener("keydown", e => {
+    const i = "1234".indexOf(e.key);
+    if (i >= 0 && state && !state.over) { e.preventDefault(); send(ORDER[i]); }
+  });
+  $("fs-mute").onclick = () => {
+    muted = !muted; $("fs-mute").textContent = muted ? "🔇" : "🔊";
+    if (master) master.gain.value = muted ? 0 : 0.7;
+    song.muted = muted;
+  };
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap"><span>OPPA · Open Personal Assistant · Apache-2.0</span><a href="https://github.com/roywei/oppa">github.com/roywei/oppa</a></div>
+</footer>
+</body>
+</html>

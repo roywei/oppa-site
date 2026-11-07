@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>OPPA · Your family's chief of staff</title>
+<meta name="description" content="OPPA is an open-source personal and family assistant. It lives in iMessage and Slack, runs on your own Mac with Claude Code or Codex, keeps memory in plain files, and hands jobs to your other agents.">
+<meta property="og:title" content="OPPA · Your family's chief of staff">
+<meta property="og:description" content="An open-source assistant that lives in your family group chat and runs on your own Mac.">
+<meta property="og:image" content="https://roywei.github.io/oppa-site/media/og-1200x630.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/oppa-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="wrap">
+  <picture>
+    <source srcset="assets/oppa-lockup-dark.svg" media="(prefers-color-scheme: dark)">
+    <img src="assets/oppa-lockup-light.svg" alt="OPPA">
+  </picture>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#agents">Agents</a>
+    <a class="play-link" href="play.html"><img class="ico-shades" src="assets/oppa-face-shades.png" alt="">Play</a>
+    <a href="#start">Get started</a>
+    <a class="star" href="https://github.com/roywei/oppa">GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">Open Personal Assistant</div>
+    <h1>Finally, someone in the family group chat who reads <em>every</em> message.</h1>
+    <p class="lede">OPPA is an open-source assistant for you and your family. It lives in the chats you already use, runs on your own Mac with Claude Code or Codex, keeps its memory in plain files you own, and hands jobs to your other AI agents.</p>
+    <div class="cta">
+      <a class="btn primary" href="#start">Get started</a>
+      <a class="btn" href="https://github.com/roywei/oppa">Star on GitHub</a>
+      <a class="btn" href="play.html"><img class="ico-shades" src="assets/oppa-face-shades.png" alt="">Play OPPA Family Style</a>
+    </div>
+    <div class="film">
+      <video src="media/oppa-promo-wide.mp4" poster="media/oppa-promo-wide-still.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="OPPA answering a family group chat and handing jobs to other agents in Slack"></video>
+    </div>
+    <p class="note">The Rivera family and their agents are made up for these pictures.</p>
+    <ul class="chips" aria-label="Where OPPA lives">
+      <li>iMessage</li><li>Slack</li><li>WeChat</li><li>Web chat</li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="wrap story">
+      <div>
+        <h2>No new app. Just a new contact.</h2>
+        <p class="section-lede">Add OPPA to the family group chat, or text it on its own. Everyone you register can talk to it, each with their own role, so Grandma gets an answer and the kids get help with homework.</p>
+        <ul>
+          <li><b>Answers from what it knows</b><span>Pickups, appointments and plans come from the family calendar and its notes, not guesses.</span></li>
+          <li><b>Follows up on its own</b><span>"I'll remind Sam at 2:45." Then it does.</span></li>
+          <li><b>Knows who is asking</b><span>Family members never move money or act as you without your yes.</span></li>
+        </ul>
+      </div>
+      <img src="media/01-groupchat.jpg" alt="An iPhone shows a family group chat. OPPA answers Grandma Rosa about pickup and says Muse moved Mia's dentist cleaning. Headline: Finally, someone in the family group chat who reads every message." loading="lazy">
+    </div>
+  </section>
+
+  <section id="agents">
+    <div class="wrap story flip">
+      <div>
+        <h2>You text OPPA.<br>OPPA texts your agents.</h2>
+        <p class="section-lede">Send one message with three things on it. OPPA posts each job in a Slack room your other agents share, such as Grok Bot, Muse, Dot or your own bots, waits for their answers in the thread, and tells you when it's done.</p>
+        <ul>
+          <li><b>Bring your own agent army</b><span>A research bot, an agent that makes calls, one that fixes the home server. OPPA keeps track of who is good at what.</span></li>
+          <li><b>One place to look</b><span>Every hand-off and reply stays in the room, readable by you.</span></li>
+          <li><b>Your word, not theirs</b><span>What another agent says is information, never permission.</span></li>
+        </ul>
+      </div>
+      <img src="media/02-delegate.jpg" alt="A Slack room where OPPA asks Grok Bot, Dot and Muse for help, with the iMessage request on a phone in front. Headline: You text OPPA. OPPA texts your agents." loading="lazy">
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>What it does</h2>
+      <p class="section-lede">A chief of staff that remembers, follows through and gets better at your household's work.</p>
+      <div class="grid">
+        <div class="card"><div class="ico">🗂️</div><h3>Memory you own</h3><p>Notes are Markdown in a private Git repository on your Mac. Read them, edit them, take them with you.</p></div>
+        <div class="card"><div class="ico">⏰</div><h3>Reminders and routines</h3><p>Reminders, daily briefings and standing jobs, like "every weekday at 8, tell me what needs attention."</p></div>
+        <div class="card"><div class="ico">🌅</div><h3>Wake up to things handled</h3><p>It checks your mail and calendar through the day and leaves a morning report of what it did.</p></div>
+        <div class="card"><div class="ico">🛠️</div><h3>Builds its own skills</h3><p>Ask for something new, like your lights or your car, and it writes the script and a skill once, then reuses them.</p></div>
+        <div class="card"><div class="ico">🔌</div><h3>Your accounts, your harness</h3><p>It uses what you've connected to Claude Code or Codex, such as Gmail and your calendar, plus your browser if you allow it.</p></div>
+        <div class="card"><div class="ico">🌙</div><h3>Improves overnight</h3><p>Each night it reviews the day, turns lessons into skills, and proposes changes to itself for you to approve.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap story flip">
+      <div>
+        <h2>Why OPPA</h2>
+        <p class="section-lede">Most assistants live in someone else's cloud and forget you between chats. OPPA runs at home and keeps what it learns.</p>
+        <div class="why">
+          <div><b>Private by default</b><span>It runs on your Mac. Your family's memory never leaves your files.</span></div>
+          <div><b>No extra keys</b><span>Each turn runs on the Claude Code or Codex you already use. OPPA has no API keys of its own.</span></div>
+          <div><b>Open source</b><span>Apache-2.0. Read every line, change anything.</span></div>
+          <div><b>Built for families</b><span>Roles, group chats and house rules, not just one user.</span></div>
+        </div>
+      </div>
+      <img src="media/05-macmini.jpg" alt="A small silver desktop computer with an OPPA face sticker on a kitchen shelf. Headline: Your Mac mini just got a job." loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Posters we can't afford yet</h2>
+      <p class="section-lede">In OPPA's own voice.</p>
+      <div class="posters">
+        <img src="media/ooh-readsall-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
+        <img src="media/ooh-grandma-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
+        <img src="media/ooh-dentist-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
+        <img src="media/ooh-onread-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
+        <img src="media/ooh-permission-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
+        <img src="media/ooh-memory-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="wrap">
+      <h2>Set up in one conversation.</h2>
+      <p class="section-lede">Open the code in Claude Code or Codex and say "set up OPPA". The agent does the building and asks you only what it needs.</p>
+      <ol class="steps">
+        <li>It checks your Mac, builds OPPA, and creates your assistant.</li>
+        <li>You pick its name and voice, connect the accounts you want, and click Allow on a few macOS prompts.</li>
+        <li>You send it one text from your phone. It answers, and finishes getting to know you there.</li>
+      </ol>
+      <pre>git clone https://github.com/roywei/oppa &amp;&amp; cd oppa
+claude "set up OPPA"</pre>
+      <p class="status">OPPA is under active construction. We run it for our own family every day; expect rough edges, and tell us what you find.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>OPPA · Open Personal Assistant · Apache-2.0</span><a href="https://github.com/roywei/oppa">github.com/roywei/oppa</a></div>
+</footer>
+</body>
+</html>
