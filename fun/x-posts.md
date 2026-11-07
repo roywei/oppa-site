@@ -1,7 +1,7 @@
 # X posts for OPPA Family Style
 
 Drafts for Roy to post from his own account. SITE is the site link once it is live
-(planned: roywei.github.io/oppa-site). Each post is under 280 characters without the media.
+(www.iaml.ai/oppa-site). Each post is under 280 characters without the media.
 
 ## 1. Launch (attach fun/oppa-family-style-poster.png, or the vertical clip fun/oppa-family-style-vertical.mp4)
 
