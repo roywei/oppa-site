@@ -94,10 +94,11 @@ footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-cont
   .story, .grid, ol.steps { grid-template-columns: 1fr; gap: 28px; }
   .story.flip > :first-child { order: 0; }
   nav a:not(.star) { display: none; }
-  .wrap { padding: 0 16px; }
+  .wrap { padding-left: 16px; padding-right: 16px; }
   section { padding: 64px 0; }
 }
 @media (max-width: 520px) { .why { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .film { aspect-ratio: 720 / 1280; max-width: 420px; } }
 
 .ico-shades { display: inline-block; width: 22px; height: 22px; margin-right: 6px; vertical-align: -5px; }
 .play-link { white-space: nowrap; }

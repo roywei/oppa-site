@@ -22,6 +22,7 @@
   <nav>
     <a href="#features">Features</a>
     <a href="#agents">Agents</a>
+    <a href="#errands">Errands</a>
     <a class="play-link" href="play.html"><img class="ico-shades" src="assets/oppa-face-shades.png" alt="">Play</a>
     <a href="#start">Get started</a>
     <a class="star" href="https://github.com/roywei/oppa">GitHub</a>
@@ -39,7 +40,11 @@
       <a class="btn" href="play.html"><img class="ico-shades" src="assets/oppa-face-shades.png" alt="">Play OPPA Family Style</a>
     </div>
     <div class="film">
-      <video src="media/oppa-promo-wide.mp4" poster="media/oppa-promo-wide-still.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="OPPA answering a family group chat and handing jobs to other agents in Slack"></video>
+      <video id="promo" poster="media/oppa-promo-wide-still.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="OPPA answering a family group chat and handing jobs to other agents in Slack">
+        <source src="media/oppa-promo-tall.mp4" type="video/mp4" media="(max-width: 600px)">
+        <source src="media/oppa-promo-wide.mp4" type="video/mp4">
+      </video>
+      <script>if (matchMedia('(max-width: 600px)').matches) document.getElementById('promo').poster = 'media/oppa-promo-tall-still.jpg';</script>
     </div>
     <p class="note">The Rivera family and their agents are made up for these pictures.</p>
     <ul class="chips" aria-label="Where OPPA lives">
@@ -92,6 +97,19 @@
     </div>
   </section>
 
+  <section id="errands">
+    <div class="wrap">
+      <h2>Errands, done from the chat</h2>
+      <p class="section-lede">Shopping and takeout run in your own browser and accounts. OPPA does the legwork, shows you the total, and only pays when you say yes.</p>
+      <div class="grid">
+        <div class="card"><div class="ico">🛒</div><h3>Shopping</h3><p>"We're out of mop pads for the robot vacuum." It finds the right fit on Amazon, checks recent reviews, sends you two options with links, and orders the one you pick.</p></div>
+        <div class="card"><div class="ico">🥡</div><h3>Takeout</h3><p>"Dinner for four, something the kids will eat." It collects everyone's picks from the group chat, builds the cart on DoorDash or Uber Eats, and checks the total and arrival time with you before it orders.</p></div>
+        <div class="card"><div class="ico">🧰</div><h3>In the store</h3><p>Standing in Home Depot? Ask where the outdoor timers are. It answers with the aisle, the bay, how many are in stock and the price.</p></div>
+      </div>
+      <p class="section-lede" style="margin-top:22px">Kids can ask for things too. Only a parent can approve the purchase.</p>
+    </div>
+  </section>
+
   <section>
     <div class="wrap story flip">
       <div>
@@ -105,21 +123,6 @@
         </div>
       </div>
       <img src="media/05-macmini.jpg" alt="A small silver desktop computer with an OPPA face sticker on a kitchen shelf. Headline: Your Mac mini just got a job." loading="lazy">
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>Posters we can't afford yet</h2>
-      <p class="section-lede">In OPPA's own voice.</p>
-      <div class="posters">
-        <img src="media/ooh-readsall-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
-        <img src="media/ooh-grandma-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
-        <img src="media/ooh-dentist-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
-        <img src="media/ooh-onread-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
-        <img src="media/ooh-permission-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
-        <img src="media/ooh-memory-1080x1350.jpg" alt="Poster in OPPA's voice" loading="lazy">
-      </div>
     </div>
   </section>
 
